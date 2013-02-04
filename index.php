@@ -51,7 +51,7 @@
 
 <div class="container">
     <h2>ChatWorld</h2>
-    <p><h5>Es donde la gente comunica y se divierte platicando...</h5></p>
+    <p><h5>Donde la gente comunica y se divierte platicando...</h5></p>
     <br>
     <div class="container">
         <div class="row">
