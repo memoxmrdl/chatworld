@@ -5,7 +5,7 @@
     <title>ChatWorld</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ChatWorld">
-    <meta name="author" content="Mario Moreno, José Guillermo">
+    <meta name="author" content="@mariomd, @memoxmrodlr">
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <style>
@@ -40,9 +40,9 @@
             </div>
             <div class="nav-collapse">
                 <form class="navbar-form pull-right">
-                    <input type="text" placeholder="Email..." class="input-medium">
-                    <input type="text" placeholder="Contraseña..." class="input-medium">
-                    <button type="submit" class="btn">Entrar</button>
+                    <input id="user" type="text" placeholder="Usuario" class="input-medium">
+                    <input id="pwd" type="password" placeholder="Contraseña" class="input-medium">
+                    <button id="submit_login" type="button" class="btn">Entrar</button>
                 </form>
             </div>
         </div>
@@ -51,30 +51,29 @@
 
 <div class="container">
     <h2>ChatWorld</h2>
-    <p><h5>Donde la gente se comunica y se divierte platicando...</h5></p>
-    <br>
+    <h5>Donde la gente se comunica y se divierte platicando...</h5>
     <div class="container">
         <div class="row">
+            <div class="span4">
             <form>
                 <fieldset>
                     <legend><h3>Regístrate</h3></legend>
-                    <input type="text" placeholder="Nombre"><br>
-                    <input type="text" placeholder="Apellidos"><br>
-                    <input type="text" placeholder="Correo electronico" class="input-xlarge"><br>
-                    <input type="text" placeholder="Escribe de nuevo el correo electronico" class="input-xlarge"><br>
-                    <input type="password" placeholder="Contraseña" class="input-xlarge"><br>
-                    <button type="submit" class="btn btn-primary btn-large">Registrarme</button>
+                    <div id="message_error_registro"></div>
+                        <div class="input-prepend">
+                            <span class="add-on">@</span>
+                            <input class="span2" id="usuario" type="text" placeholder="Usuario" required>
+                        </div>
+                        <input type="text" id="email1" placeholder="Correo electronico" class="input-xlarge" required><br>
+                        <input type="text" id="email2" placeholder="Escribe de nuevo el correo electronico" class="input-xlarge" required><br>
+                        <input type="password" id="password" placeholder="Contraseña" class="input-xlarge" required><br>
+                        <button type="button" id="submit_registro" class="btn btn-primary btn-block">Registrarme</button>
                 </fieldset>
             </form>
-        </div>
+            </div>
     </div>
 </div>
-
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="../assets/js/jquery.js"></script>
-<script src="../assets/js/bootstrap-transition.js"></script>
-
+<script src="bootstrap/js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="bootstrap/js/boot.js" type="text/javascript"></script>
 </body>
 </html>
