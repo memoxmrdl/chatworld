@@ -13,7 +13,7 @@
             $r = $ms->query($SQL);
             if($r[0]["usuario"] == $usuario) {
                 if($r[0]["password"] == $password) {
-                    $_SESSION["id"] = $r[0]["usuario_id"];
+                    $_SESSION["usuario_id"] = $r[0]["usuario_id"];
                     $_SESSION["nombre"] = $r[0]["usuario"];
                     $_SESSION["correo"] = $r[0]["correo"];
                     $r["session"] = true;
